@@ -13,6 +13,7 @@ let dupStringSonuc = '';
 let puan = 0;
 
 function random() {
+    //Random olarak 5 tane harf getirir.
     for (let i = 0; i < 5; i++) {
 
         let a = maske[Math.floor(Math.random() * maske.length)];
@@ -70,16 +71,19 @@ app.get('/kelime/:madde', async (req, res) => {
         let kelimee = kelime.madde;
         let counter = 0;
 
-        //Kelime Kontrol
-
+        //Kelime Kontrol 
         for (let i = 0; i < kelimee.length; i++) {
             const element = kelimee[i];
 
             if (sonuc.search(element) == -1) {
                 counter++;
             };
-        }
+        };
+
+        //Puan kelimenin uzunluğu kadar artar.
         puan += kelimee.length;
+
+        //Sayfa yönlendirmesi.
         console.log("MADDE ->" + kelime.madde)
         if (kelime.madde == null) {
             console.log("null döndüyor");
@@ -88,9 +92,9 @@ app.get('/kelime/:madde', async (req, res) => {
             res.redirect('/lost');
         } else {
             res.redirect('/');
-        }
+        };
 
-
+        //Catch e düşerse kelime db de bulunamamıştır.
     } catch (error) {
         res.redirect('/lost');
     }
@@ -108,7 +112,7 @@ app.post('/kelime', async (req, res) => {
 
 
 app.get('/lost', async (req, res) => {
-
+    //Kelime oyun içi tutulan db den silinir.
     const testAll = await Test.find();
     const test = await Test.deleteMany();
     sonuc = '';

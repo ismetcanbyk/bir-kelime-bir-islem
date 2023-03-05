@@ -20,6 +20,4 @@ dupSonuc.forEach(element => {
     console.log(element);
 });
 
-document.getElementById("test").innerHTML("sa brom")
-
-document.write(sonuc)
+//Random harf için yazmış olduğum deneme kodum.
