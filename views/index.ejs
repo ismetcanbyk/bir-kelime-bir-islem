@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Test</title>
+</head>
+
+<body>
+
+
+    <h1 class="h1 mt-5 text-center">Rastgele Harfler </h1>
+
+    <h2 class="h2 text-center mt-4 mb-4 text-success" id="test">
+
+        <% for (let i=0; i < sonuc.length; i++) { %>
+            <%=sonuc[i] %> ,
+                <% } %>
+                    *
+                    </h4>
+
+                    <div class="row ">
+                        <div class="col-6 offset-3 mt-4 ">
+                            <form action="/kelime" method="post">
+                                <input name="testKelime" type="text" class="form-control border-4"
+                                    placeholder="Post Name" id="name" required
+                                    data-validation-required-message="Please enter your name.">
+
+                            </form>
+                        </div>
+                        <div class="col-3 mt-4">
+
+                            <button type="submit" class="btn btn-primary p-2" id="sendMessageButton">Send</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a class="btn btn-primary ms-5 " href="/start">Başla</a>
+                        <a class="btn btn-danger ms-2" href="/lost">Bitir</a>
+                    </div>
+
+                    <div class="container">
+                        <h1 class="text-center">Kelimelerim</h1>
+                        <h3 class="h3 text-center text-success ">
+
+                            <% for (let i=0; i < kelime.length; i++) { %>
+                                <%= kelime[i].testKelime %> ,
+                                    <% } %>
+
+
+                                        </h1>
+                    </div>
+
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+                        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+                        crossorigin="anonymous"></script>
+</body>
+
+</html>

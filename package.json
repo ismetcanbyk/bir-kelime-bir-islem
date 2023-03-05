@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  },
+  "name": "bir-kelime-bir-islem",
+  "description": "\"# Bir-Kelime-Bir-Islem\"",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismetcanbyk/Bir-Kelime-Bir-Islem.git"
+  },
+  "keywords": [
+    "birKelimeBirIslem",
+    "yazilim",
+    "yapimi"
+  ],
+  "author": "ismet can byk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismetcanbyk/Bir-Kelime-Bir-Islem/issues"
+  },
+  "homepage": "https://github.com/ismetcanbyk/Bir-Kelime-Bir-Islem#readme"
+}
