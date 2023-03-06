@@ -1,6 +1,6 @@
 # Bir-Kelime-Bir-İşlem
 
-<br><br>
+<br>
 
 
 ## Nasıl Oynanır
